@@ -1,0 +1,291 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f7f7f7;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navegação */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Conteúdo */
+.container {
+  padding: 10px;
+}
+
+/* Cards de Livros */
+.book-card {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 20px; */
+  padding: 8px;
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.book-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  gap: 10px; /* Gap between grid items */
+}
+
+.grid-item {
+  background-color: #f2f2f2; /* Background color */
+  padding: 0px; /* Padding around each grid item */
+  text-align: center; /* Center text */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  }
+}
+
+/* Form.css */
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* AuthorProfile.css */
+
+.author-profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.edit-author-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+/* BookDetailPage.css */
+
+.book-detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.poster {
+  width: 200px;
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  max-width: 700px;
+
+  flex-grow: 1;
+}
+
+.year {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+/* Comment.css */
+
+.comment-section {
+  margin-top: 40px;
+}
+
+.comments-list {
+  margin-bottom: 20px;
+}
+
+.comment {
+  margin-bottom: 10px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allow vertical resizing of textarea */
+  margin-bottom: 10px;
+}
+
+.comment-form button {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.comment button:hover {
+  background-color: #0056b3;
+}
